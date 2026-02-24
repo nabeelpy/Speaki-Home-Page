@@ -134,15 +134,41 @@
     <nav class="nav-container" aria-label="Main navigation">
       <a href="#" class="nav-logo" aria-label="Speak to Learn — Home">
         <div class="logo-icon">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
-            <path d="M10 16C10 12.6863 12.6863 10 16 10C19.3137 10 22 12.6863 22 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="16" cy="20" r="2" fill="white"/>
-            <path d="M8 22C8 22 11 18 16 18C21 18 24 22 24 22" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-            <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
-          </svg>
+          <svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fullGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <g transform="translate(6, 10)">
+    <rect x="0" y="0" width="40" height="40" rx="10" fill="url(#iconGrad)"/>
+    
+    <!-- Sound wave bars -->
+    <g transform="translate(11, 20)">
+      <rect x="0" y="-3" width="2.5" height="6" rx="1.25" fill="white" opacity="0.9"/>
+      <rect x="4" y="-6" width="2.5" height="12" rx="1.25" fill="white"/>
+      <rect x="8" y="-8" width="2.5" height="16" rx="1.25" fill="white"/>
+      <rect x="12" y="-6" width="2.5" height="12" rx="1.25" fill="white"/>
+      <rect x="16" y="-4" width="2.5" height="8" rx="1.25" fill="white" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <text x="58" y="38" font-family="'Poppins', sans-serif" 
+        font-size="26" font-weight="700" fill="url(#fullGrad)" 
+        letter-spacing="-0.5">
+    FreeSpeaki
+  </text>
+</svg>
         </div>
-        <span class="logo-text">Speak to Learn</span>
       </a>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
